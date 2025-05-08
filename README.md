@@ -26,7 +26,11 @@ Genomic inputs can be long and sparse, making batching and training memory-inten
 8.	Integration with Bioinformatics Pipelines Upstream dependencies: 
 Real-world tasks often require processing BAM, FASTA, or VCF files, or pulling genome annotations from GTF files. 
 Cross-domain fluency: Bridging machine learning and bioinformatics requires comfort with tools like pysam, pyfaidx, and biopython, which may be unfamiliar to ML practitioners. 
+
 A Learner’s Perspective 
+
 PyTorch is a powerful, general-purpose deep learning framework—but that generality is a double-edged sword. For newcomers to genomics, the real barrier isn’t the architecture of CNNs or transformers—it's the complexity of adapting machine learning infrastructure to the biological domain. From tensor reshaping to motif visualization, even simple tasks can feel like deep engineering problems. Despite these hurdles, the field is moving rapidly toward solutions: More interpretable models (e.g., DeepLIFT, SHAP for sequences); Integration of multi-modal inputs (e.g., sequence + chromatin accessibility + 3D conformation); Scalable architectures for whole-genome prediction (e.g., Enformer, DNABERT); Improved pre-trained models and biological benchmarks all point to the rapid advance in the field. 
+
 Looking Ahead.
+
 To fully exploit PyTorch in genomics, one must bridge two distinct worlds: machine learning tooling and biological knowledge. There is also a growing need for intermediate-layer resources—tutorials, community frameworks, and open-source tools, workshops—that smooth this integration. Building on collaborative spaces (e.g., via ACCESS or NAIRR) where domain experts and modelers can co-develop these tools will be critical. In the meantime, hands-on tutorials that lower the barrier for entry—especially for DNA-specific tasks—are incredibly valuable. Whether you're modeling motif grammars, expression levels, or CRISPR screen outcomes, remember: PyTorch is just the tool. The real innovation lies in how we adapt it to decode the language of life.
