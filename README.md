@@ -9,14 +9,13 @@ Core Challenges in DNA Analysis Using PyTorch
 1.	Representing DNA Sequences: 
 While DNA can be reduced to a simple four-letter alphabet (A, C, G, T), this simplification hides a wealth of biochemical complexity.
 
-Encoding limitations:
- One-hot encoding is the standard, but it discards chemical similarities (e.g., purines vs. pyrimidines) and regulatory features like methylation. 
-
-•	Length variability:
-Genomic sequences vary widely in length, requiring strategies like padding, truncation, or windowing. 
-
-•	Strandedness and reverse complementarity:
-DNA is double-stranded; motifs can appear in both directions. This isn't natively handled by standard Conv1D layers and typically requires explicit augmentation with reverse-complemented sequences.
+       Encoding limitations: One-hot encoding is the standard, but it discards chemical similarities (e.g., purines vs. pyrimidines) and regulatory features like methylation. 
+       
+       •	Length variability:
+       Genomic sequences vary widely in length, requiring strategies like padding, truncation, or windowing. 
+       
+       •	Strandedness and reverse complementarity:
+       DNA is double-stranded; motifs can appear in both directions. This isn't natively handled by standard Conv1D layers and typically requires explicit augmentation with reverse-complemented sequences.
 
 2. Matrioshka Effect:
 Certain DNA sequences exhibit a "Matrioshka effect," in which genetic information is nested within larger sequences, where shorter coding or functional sequences are embedded within longer stretches of coding sequences. This complexity is further heightened by overlapping sequences—regions where the same nucleotide stretch can encode different information depending on the reading frame or context. Such multi-purpose encoding enhances both the efficiency and complexity of the genome, presenting additional challenges for designing tensor models capable of capturing this layered structure.
