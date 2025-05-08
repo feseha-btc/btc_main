@@ -1,7 +1,11 @@
 My Two-Bit Take on PyTorch as a DNA Analysis Tool 
+
 Dr. Feseha Abebe-Akele
+
 Deep learning with PyTorch offers a compelling opportunity for DNA sequence modeling, but it comes with a distinct set of challenges—especially for those transitioning from more standard domains like computer vision or natural language processing. DNA is not just another kind of sequence data: it encodes intricate biological rules and structural constraints that require careful representation, specialized architectures, and deep domain insight. Below, I outline the key hurdles—and some workarounds—when applying PyTorch to genomics tasks. 
+
 Core Challenges in DNA Analysis Using PyTorch 
+
 1.	Representing DNA Sequences: 
 While DNA can be reduced to a simple four-letter alphabet (A, C, G, T), this simplification hides a wealth of biochemical complexity.
 Encoding limitations: One-hot encoding is the standard, but it discards chemical similarities (e.g., purines vs. pyrimidines) and regulatory features like methylation. 
