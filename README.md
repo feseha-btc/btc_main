@@ -18,8 +18,8 @@ Genomic sequences vary widely in length, requiring strategies like padding, trun
 •	Strandedness and reverse complementarity:
 DNA is double-stranded; motifs can appear in both directions. This isn't natively handled by standard Conv1D layers and typically requires explicit augmentation with reverse-complemented sequences.
 
-•	Matrioshka Effect:
-Certain DNA sequences exhibit a "Matrioshka effect," in which genetic information is nested within larger sequences, where  shorter functional sequences are embedded within longer stretches of DNA. This complexity is further heightened by overlapping sequences—regions where the same nucleotide stretch can encode different information depending on the reading frame or context. Such multi-purpose encoding enhances both the efficiency and complexity of the genome, presenting additional challenges for designing tensor models capable of capturing this layered structure.
+2. Matrioshka Effect:
+Certain DNA sequences exhibit a "Matrioshka effect," in which genetic information is nested within larger sequences, where shorter coding or functional sequences are embedded within longer stretches of coding sequences. This complexity is further heightened by overlapping sequences—regions where the same nucleotide stretch can encode different information depending on the reading frame or context. Such multi-purpose encoding enhances both the efficiency and complexity of the genome, presenting additional challenges for designing tensor models capable of capturing this layered structure.
 
 3.	Motif Learning and Local Dependencies Local pattern detection: 
 CNNs are well-suited for identifying short motifs (e.g., transcription factor binding sites), but interpretability remains limited. Motif complexity: Real biological motifs are often variable-length, degenerate (contain flexible positions), and interact combinatorially. Modeling these requires advanced architectures like dilated convolutions or attention-based mechanisms. 
